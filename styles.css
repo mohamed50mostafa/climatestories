@@ -1,0 +1,99 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-image: url('https://i.pinimg.com/564x/56/77/be/5677beb843278866e317afae9ccdd4a8.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin: 2rem auto;
+}
+
+.page.active {
+    display: block;
+    opacity: 1;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    animation: fadeIn 1s ease forwards;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease forwards;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Story text */
+.story {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 3rem auto;
+    animation: fadeIn 1s ease forwards;
+    padding: 3rem;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.delay-2 {
+    animation-delay: 1s;
+}
